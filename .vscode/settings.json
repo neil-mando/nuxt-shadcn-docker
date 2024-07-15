@@ -10,6 +10,12 @@
 
   // Hide directories and files
   "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
     "**/node_modules": true,
     "**/.nuxt": true,
     "**/.output": true,
@@ -83,5 +89,6 @@
   "prettier.enable": false,
 
   // VS Code Performance
-  "terminal.integrated.gpuAcceleration": "on"
+  "terminal.integrated.gpuAcceleration": "on",
+  "hide-files.files": []
 }

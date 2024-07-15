@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     'shadcn-nuxt',
+    '@nuxtjs/supabase',
   ],
   colorMode: {
     classSuffix: '',
@@ -77,4 +78,11 @@ export default defineNuxtConfig({
   },
 
   srcDir: 'src/',
+
+  // Supabase settings
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
+    redirect: false,
+  },
 })

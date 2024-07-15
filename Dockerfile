@@ -1,4 +1,4 @@
-FROM imbios/bun-node:latest-current-slim as base
+FROM imbios/bun-node:latest-current-slim AS base
 WORKDIR /usr/src/app
 CMD [ "chmod 755 /usr/src/app" ]
 RUN chown -Rh $user:$user /usr/src/app
